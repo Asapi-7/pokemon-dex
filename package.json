@@ -16,7 +16,7 @@
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false PUBLIC_URL=./ react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -38,7 +38,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://github.com/Asapi-7/pokemon-dex.git",
+  "homepage": "./",
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }
