@@ -1,0 +1,89 @@
+.card{
+    width: 350px;
+    box-shadow: 0px 3px 7px 3px #ababab;
+    border-radius: 50px;
+    background-color: rgb(235, 255, 235);
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 20px;
+}
+
+.card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 7px 4px #ababab;
+    background-color: rgb(255, 255, 255);
+}
+
+.cardName{
+    padding: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.cardTypes{
+    text-align: center;
+}
+
+.cardImg{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cardImg img{
+    width: 150px;
+    height: 150px;
+
+    transform: translateY(0px);
+    transition: transform 0.25s ease-in-out;
+}
+
+.cardImg img.rotating{
+    width: 150px;
+    height: 150px;
+    transform: translateY(-5px);
+    transform: translateY(2px);
+}
+
+.cardInfo {
+    text-align: center;
+}
+
+.criesBtn{
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.criesBtn button{
+    padding: 13px 32px;
+    background-color: rgb(137, 192, 149);
+    border: none;
+    box-shadow: 0px 3px 7px 1px #ababab;
+    border-radius: 15px;
+    color: rgb(229, 252, 255);
+    transition: all 0.3s;
+}
+
+.criesBtn button:hover{
+    transform: translateY(3px);
+    box-shadow: none;
+    background-color: rgb(35, 179, 141);
+}
+
+.criesBtn button:active{
+    background-color: rgb(128, 92, 65);
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.criesBtn button:disabled{
+    cursor: not-allowed;
+    background-color: #ccc;
+    color: #666;
+    box-shadow: none;
+}
